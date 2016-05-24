@@ -2,6 +2,8 @@
 
 This is a project that introduces examples build with [Synaptic.js](https://github.com/cazala/synaptic/) neural network library. Examples are written in JavaScript ES6.
 
+Work in progress... :)
+
 ## Guide
 
 * Install [node](https://nodejs.org)
