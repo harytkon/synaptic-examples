@@ -1,5 +1,8 @@
 import Perceptron from './Perceptron';
 import { Trainer } from 'synaptic';
+import React from 'react';
+import { render } from 'react-dom';
+import Examples from './Examples';
  
 let myPerceptron = new Perceptron(2,13,1);
 myPerceptron.connectLayers();
@@ -14,5 +17,9 @@ console.log('0 ,1: ' + myPerceptron.activate([0,1]));
 console.log('1 ,1: ' + myPerceptron.activate([1,1]));	
 console.log('--');
 
+render(
+  <Examples />,
+  document.getElementById('root')
+);
 
 
