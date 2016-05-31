@@ -5,13 +5,13 @@ import { Trainer } from 'synaptic';
 export default class Examples extends Component {
   constructor(props) {
     super(props);
-    let myPerceptron = new Perceptron(2,13,1);
+	let myPerceptron = new Perceptron(2,13,1);
 	myPerceptron.connectLayers();
 	const myTrainer = new Trainer(myPerceptron);
 	const trainer = myTrainer.XOR();
-    this.state = {
-    	perceptron: myPerceptron,
-    };
+	this.state = {
+		perceptron: myPerceptron,
+	};
   }
   render() {
     return (
