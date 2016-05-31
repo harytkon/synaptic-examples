@@ -10,11 +10,17 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'react-hot-loader',
+            },
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
                 loader: 'babel-loader',
-                test: path.join(__dirname, 'src'),
                 query: {
-                  presets: 'es2015',
-                },
+                    presets: ['es2015', 'react']
+                }
             }
         ]
     },
@@ -23,6 +29,9 @@ module.exports = {
     ],
     stats: {
         colors: true
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
     },
     devtool: 'source-map'
 };
