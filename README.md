@@ -11,4 +11,9 @@ Work in progress...
 * Transpile and start server `npm run server`
 * Open `http://localhost:8080/` in browser
 
+## Libraries used
 
+* [Synaptic.js](http://synaptic.juancazala.com/)
+* [React.js](https://facebook.github.io/react/)
+* [Webpack](http://webpack.github.io)
+* [Webpack Dev Server](http://webpack.github.io/docs/webpack-dev-server.html)
